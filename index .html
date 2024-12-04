@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Crossing Streets</title>
+    <style>
+     .img{
+            display: flex;
+            height: 100vh;
+            width: 100vh;
+           
+        }
+       
+        .bike {
+            position: absolute;
+            bottom: 130px;
+            left: -150px;
+            width: 100px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: moveBike 5s linear infinite; 
+        }
+
+        
+        .bike-body {
+            width: 50%;
+            height: 40%;
+            background-color: #8b4513; 
+            border-radius: 5px;
+            position: absolute;
+            top: 10px;
+        }
+
+        .wheel {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .wheel.left {
+            left: 5px;
+            bottom: -10px;
+        }
+
+        .wheel.right {
+            right: 5px;
+            bottom: -10px;
+        }
+        @keyframes moveBike {
+            0% {
+                left: -150px; 
+            }
+            100% {
+                left: 100%; 
+            }
+        }
+
+       
+       
+    
+    </style>
+</head>
+<body>
+  
+    <div class="img"><img src="https://i.pinimg.com/736x/92/40/62/924062d8f8cf10814e8bf49924918a06.jpg" alt=""></div>
+    <div class="bike">
+        <div class="bike-body"></div>
+        <div class="wheel left"></div>
+        <div class="wheel right"></div>
+    </div>
+</body>
+</html>
